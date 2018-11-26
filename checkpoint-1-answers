@@ -1,0 +1,85 @@
+CHECKPOINT 1 ANSWERS
+
+1. What data types do each of these values represent?
+
+	"A Clockwork Orange" : string
+	42: integer
+	09/02/1945: date
+	98.7: float
+	$15.99: float
+
+2. Explain when a database would be used. Explain when a text file would be used.
+
+	A: A database would be used when there are multiple entries of data which is formatted the same. For example, a list of users with each user's phone number, address, and name. Furthermore, if the data must be retrieved and manipulated, a database should be used. If the data is simple and does not require manipulation, then a text file would suffice. An essay, a poem, or an article are all examples of data that would be stored using a text file.
+
+3. Describe one difference between SQL and other programming languages.
+
+	A: SQL is a declarative language while most others are procedural. With SQL, we declare what we want to find and the engine takes care of finding the most efficient searching algorithm. With procedural languages, the algorithm for searching must be written.
+
+4. In your own words, explain how the pieces of a database system fit together at a high level.
+
+	A: A database is simply a collection of data formatted into a table. Columns and rows organize the data for easy retrieval. The columns designate what is stored, such as names, dates, cat-photo links, etc. Each row designates a new instance of the data. If creating a user database, each row would be a new user. SQL is the language that allows us to retrieve specific data from the database.
+
+5. Explain the meaning of table, row, column, and value.
+
+	A: Databases are organized into tables. Tables are made of columns and rows which traverse the table vertically and horizontally, respectively. The columns designate what is stored, such as names, dates, cat-photo links, etc. Each row designates a new instance of the data. If creating a user database, each row would be a new user. At each intersection of a column and a row exists a unique value. For example, at the intersection of a name column and the 'Jordan' row, the string 'Jordan' would be found.
+
+6. List three data types that can be used in a table.
+	A: Integers, floats, strings.
+
+7. Given this payments table, provide an English description of the following queries and include their results:
+
+     SELECT date, amount
+     FROM payments;
+
+     SELECT amount
+     FROM payments
+     WHERE amount > 500;
+
+     SELECT *
+     FROM payments
+     WHERE payee = 'Mega Foods';
+
+	A: 
+		1. Show me all dates and amounts from the payments database.
+		2. Show me all payment amounts that are over 500 from the payments database .
+		3. Show me all data for the 'Mega Foods' payee from the payments database.
+
+8. Given this users table, write SQL queries using the following criteria and include the output:
+
+	-The email and sign-up date for the user named DeAndre Data.
+	
+	SQL:
+	SELECT email, signup 
+	FROM users
+	WHERE name = 'DeAndre Data'
+
+	OUTPUT:
+	email: datad@comcast.net
+	signup: 2008-01-20T00:00:00.000Z
+		
+	-The user ID for the user with email 'aleesia.algorithm@uw.edu'.
+
+	SQL: 
+	SELECT userid
+	FROM users
+	WHERE email = 'aleesia.algorithm@uw.edu'
+
+	OUTPUT: 
+	userid: 1
+
+	
+	All the columns for the user ID equal to 4.
+
+	SQL:
+	SELECT *
+	FROM users
+	WHERE userid = 4
+
+	OUTPUT:
+	userid: 4	
+	name: Brandy Boolean	
+	email: bboolean@nasa.gov	
+	signup: 1999-10-15T00:00:00.000Z
+		
+
