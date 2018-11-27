@@ -42,8 +42,29 @@ CHECKPOINT 1 ANSWERS
 
 	A: 
 		1. Show me all dates and amounts from the payments database.
-		2. Show me all payment amounts that are over 500 from the payments database .
-		3. Show me all data for the 'Mega Foods' payee from the payments database.
+
+
+| date                     | amount    |
+| ------------------------ | --------- |
+| 2016-05-01T00:00:00.000Z | 1500.0000 |
+| 2016-05-10T00:00:00.000Z | 37.0000   |
+| 2016-05-15T00:00:00.000Z | 124.9300  |
+| 2016-05-23T00:00:00.000Z | 54.7200   |
+
+---
+		2. Show me all payment amounts that are over 500 from the payments database
+
+| amount    |
+| --------- |
+| 1500.0000 |
+
+	3. Show me all data for the 'Mega Foods' payee from the payments database. 
+	
+
+| date                     | payee      | amount   | memo      |
+| ------------------------ | ---------- | -------- | --------- |
+| 2016-05-15T00:00:00.000Z | Mega Foods | 124.9300 | Groceries |
+
 
 8. Given this users table, write SQL queries using the following criteria and include the output:
 
